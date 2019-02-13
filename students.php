@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">    
     <script src = "js/scripts.js"></script>
+    
     <?php
          $dbhost = 'localhost';
          $dbuser = 'rashrestha';
@@ -15,7 +16,7 @@
          if(!$conn){
             die('Could not connect: ' . mysql_error());
          }
-         echo 'Connected successfully';
+         echo "Connected successfully";
          mysql_close($conn);
    ?>
   </head>
