@@ -10,8 +10,9 @@
          $dbhost = 'localhost';
          $dbuser = 'rashrestha';
          $dbpass = 'YsSAm5Aa';
-         $conn = mysql_connect($dbhost, $dbuser, $dbpass);
-         if(! $conn ) {
+         $dbname = 'wry';
+         $conn = mysql_connect($dbhost, $dbuser, $dbpass, $dbname);
+         if(!$conn){
             die('Could not connect: ' . mysql_error());
          }
          echo 'Connected successfully';
