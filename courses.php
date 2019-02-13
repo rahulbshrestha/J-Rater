@@ -23,13 +23,13 @@
                 <a class="nav-link page-scroll" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="students.html">Students</a>
+                <a class="nav-link page-scroll" href="students.php">Students</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="courses.html">Courses</a>
+                <a class="nav-link page-scroll" href="courses.php">Courses</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="instructors.html">Instructors</a>
+                <a class="nav-link page-scroll" href="instructors.php">Instructors</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#Discussion">Discussion</a>
@@ -38,7 +38,7 @@
                 <a class="nav-link page-scroll" href="#help">Help</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="imprint.html">Imprint</a>
+                <a class="nav-link page-scroll" href="imprint.php">Imprint</a>
               </li>
             </ul>
           </div>
