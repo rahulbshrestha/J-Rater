@@ -1,0 +1,294 @@
+/*Importing google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto");
+/*Importing ends */
+
+
+/*Login table starts*/
+.wrapper {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+  .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    @include box-sizing(border-box);
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+/*Login table Ends*/
+
+/*Body starts */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #a0a6ad;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 14px;
+  color: #a0a6ad;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+
+a:hover, a:focus {
+  color: #3c9cfd;
+}
+
+a {
+  color: #3c9cfd;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #191c1e;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:not([href]):not([tabindex]) {
+  color: #fff;
+}
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: #fff;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.bg-defult {
+  background: #3c9cfd !important;
+}
+
+/*Body ends */
+
+/*Buttons starts */
+.btn {
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+  outline: none;
+}
+
+
+.btn-border {
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: #3c9cfd;
+  color: #3c9cfd;
+}
+
+.btn-border:hover {
+  box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+}
+
+.btn-border-filled {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #3c9cfd;
+}
+
+.btn-border-filled:hover {
+  color: #3c9cfd;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+}
+
+.btn-lg {
+  padding: 14px 33px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+button:focus {
+  outline: none !important;
+}
+/*Buttons ends */
+
+/*Navigation bar starts */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.navbar-nav .active {
+  color: #ffffff !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 0px;
+  margin-left: 30px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.navbar-expand-md .navbar-nav .nav-link:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar-expand-md .navbar-nav .active::before,
+.navbar-expand-md .navbar-nav .nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-expand-md .navbar-toggler {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.navbar-expand-md .navbar-toggler i {
+  color: #fff !important;
+}
+
+.navbar-expand-md .navbar-toggler:focus {
+  outline: none;
+}
+/*Navigation bar ends */
+
+
+/*Home area starts */
+.home-area {
+  background: #3c96ff;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  /*position: relative;*/   /*Commented this out because the blue background wasn't covering the whole page*/
+}
+
+.home-area .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+}
+
+.home-area .contents {
+  padding: 160px 0 140px;
+}
+
+.home-area .contents h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+
+.home-area .contents p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.home-area .contents .btn {
+  margin-top: 40px;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.home-area .contents .btn-border {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.home-area .login-box {
+  padding: 148px 0 0px;
+}
+
+.home-area .login-box img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/*Home area ends */
