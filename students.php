@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">    
     <script src = "js/scripts.js"></script>
     <?php
-         $dbhost = '127.0.0.1:3306';
+         $dbhost = 'localhost';
          $dbuser = 'rashrestha';
          $dbpass = 'YsSAm5Aa';
          $conn = mysql_connect($dbhost, $dbuser, $dbpass);
