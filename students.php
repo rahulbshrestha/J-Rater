@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">    
     <script src = "js/scripts.js"></script>
+    <?php
+         $dbhost = '127.0.0.1:3306';
+         $dbuser = 'rashrestha';
+         $dbpass = 'YsSAm5Aa';
+         $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+         if(! $conn ) {
+            die('Could not connect: ' . mysql_error());
+         }
+         echo 'Connected successfully';
+         mysql_close($conn);
+   ?>
   </head>
   
   <body>
