@@ -10,7 +10,8 @@
 	if(!$conn){
 		die('Could not connect: ' . mysqli_error());
 	}
-	echo "Connected successfully to database! \r\n";
+	echo "Connected successfully to database! \n";
+	echo "<br>";
 
 	if(isset($_POST['submit'])) {
 		$student_id = $_POST['student_id'];
@@ -24,7 +25,10 @@
 		VALUES ('$student_id','$firstname','$year' ,'$major')";
 
 		echo "1 record added! \n";
+		
+		echo "<meta http-equiv='refresh' content='0'>";
 	}
+
 	mysql_close($conn)
 
 ?>

@@ -21,7 +21,7 @@
 
 		echo "1 record added! \n";
 	}
-	mysql_close($conn)
+	mysql_close($conn);
 
 ?>
 

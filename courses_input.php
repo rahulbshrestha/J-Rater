@@ -21,8 +21,18 @@
 
 		echo "1 record added! \n";
 	}
-	mysql_close($conn)
 
+	$sql = "SELECT * FROM course;";
+
+	if(!$result = $db->query($sql)){
+    	die('There was an error running the query [' . $db->error . ']');
+	}
+
+	while($row = $result->fetch_assoc()){
+	    echo $row['course_id'] . ', ' . $row['name'] . ', ' . $row['location'] . '<br />';
+	}
+	
+	mysql_close($conn);
 ?>
 
 </body>

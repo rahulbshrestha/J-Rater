@@ -71,6 +71,8 @@
               <input type="text" name="lastname"><br>
               Department:<br>
               <input type="text" name="department"><br>
+              Rating (on a scale 1-5):<br>
+              <input type="text" name="rating"><br>
               <br>
               <input type="submit" value="Submit" name = "submit" >
             </form>

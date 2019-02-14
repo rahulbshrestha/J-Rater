@@ -68,6 +68,8 @@
               <input type="text" name="coursename"><br>
               Course Location:<br>
               <input type="text" name="courselocation"><br>
+              Rating (on a scale 1-5):<br>
+              <input type="text" name="rating"><br>
               <br>
 					    <input type="submit" value="Submit" name = "submit">
             </form>
