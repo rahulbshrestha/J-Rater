@@ -8,6 +8,18 @@
 		<script src="js/scripts.js"></script>
   </head>
   <body>
+    <?php
+         $dbhost = 'localhost';
+         $dbuser = 'rashrestha';
+         $dbpass = 'YsSAm5Aa';
+         $dbname = 'wry';
+         $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+         if(!$conn){
+            die('Could not connect: ' . mysqli_error());
+         }
+         echo "Connected successfully";
+         mysqli_close($conn);
+   ?>
     <!-- Header section starts -->
     <header id="home" class="home-area">
       <div class="overlay"></div>
@@ -49,7 +61,7 @@
           <div class="col-lg-7 col-md-12 col-xs-12">
             <div class="contents">
               <h2 class="head-title">Courses Input Form </h2>
-              <form action="/action_page.php">
+              <form action="courses_input.php" method = "post">
               Course ID:<br>
               <input type="text" name="courseid"><br>
               Course Name:<br>
@@ -57,7 +69,7 @@
               Course Location:<br>
               <input type="text" name="courselocation"><br>
               <br>
-					    <input type="submit" value="submit" onclick = "return submitData();" >
+					    <input type="submit" value="Submit" name = "submit">
             </form>
 
             </div>

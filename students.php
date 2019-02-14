@@ -6,22 +6,20 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">    
     <script src = "js/scripts.js"></script>
-    
-    <?php
+  </head>
+  
+  <body>
+   <?php
          $dbhost = 'localhost';
          $dbuser = 'rashrestha';
          $dbpass = 'YsSAm5Aa';
          $dbname = 'wry';
-         $conn = mysql_connect($dbhost, $dbuser, $dbpass, $dbname);
+         $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
          if(!$conn){
-            die('Could not connect: ' . mysql_error());
+            die('Could not connect: ' . mysqli_error());
          }
-         echo "Connected successfully";
-         mysql_close($conn);
+         echo "Connected successfully from students.php!";
    ?>
-  </head>
-  
-  <body>
     <!-- Header section starts -->
     <header id="home" class="home-area">    
       <div class="overlay"></div>
@@ -63,26 +61,24 @@
           <div class="col-lg-7 col-md-12 col-xs-12">
             <div class="contents">
               <h2 class="head-title">Students Sign Up Form </h2>
-              <form action="/action_page.php" method = "post">
-              First Name:<br>
-              <input type="text" name="firstname"><br>
-              Last Name<br>
-              <input type="text" name="lastname"><br>
-              Major:<br>
-              <input type="text" name="major"><br>
-              Year:<br>
-              <input type="text" name="year"><br>
-              <br>
-
-              <input type="submit" value="Submit">
+              <form action= "students_input.php" method = "post">
+                  Student ID: <br>
+                 <input type="text" name="student_id"><br>
+                 First Name:<br>
+                 <input type="text" name="firstname"><br>
+                 Last Name<br>
+                 <input type="text" name="lastname"><br>
+                 Major:<br>
+                 <input type="text" name="major"><br>
+                 Year:<br>
+                 <input type="text" name="year"><br>
+                 <br>
+                 <input type="submit" value="Submit" name = "submit">
             </form>
-
-
             </div>
           </div>  
           <div class="col-lg-5 col-md-12 col-xs-12">
-            
-
+            <!--Add something here later-->
 
          </div>            
           </div>

@@ -9,6 +9,18 @@
   </head>
 
   <body>
+    <?php
+         $dbhost = 'localhost';
+         $dbuser = 'rashrestha';
+         $dbpass = 'YsSAm5Aa';
+         $dbname = 'wry';
+         $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+         if(!$conn){
+            die('Could not connect: ' . mysqli_error());
+         }
+         echo "Connected successfully";
+         mysqli_close($conn);
+   ?>
     <!-- Header section starts -->
     <header id="home" class="home-area">
       <div class="overlay"></div>

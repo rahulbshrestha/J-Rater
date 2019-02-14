@@ -9,6 +9,18 @@
   </head>
 
   <body>
+    <?php
+         $dbhost = 'localhost';
+         $dbuser = 'rashrestha';
+         $dbpass = 'YsSAm5Aa';
+         $dbname = 'wry';
+         $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+         if(!$conn){
+            die('Could not connect: ' . mysqli_error());
+         }
+         echo "Connected successfully";
+         mysqli_close($conn);
+   ?>
     <!-- Header section starts -->
     <header id="home" class="home-area">
       <div class="overlay"></div>
@@ -50,7 +62,9 @@
           <div class="col-lg-7 col-md-12 col-xs-12">
             <div class="contents">
               <h2 class="head-title">Instructors Input Form </h2>
-              <form action="/action_page.php" method = "post">
+              <form action="instructors_input.php" method = "post">
+              Instructor ID: <br>
+              <input type="text" name="instructor_id"><br>
               First name:<br>
               <input type="text" name="firstname"><br>
               Last name:<br>
@@ -58,7 +72,7 @@
               Department:<br>
               <input type="text" name="department"><br>
               <br>
-              <input type="submit" value="submit" onclick = "return submitData();" >
+              <input type="submit" value="Submit" name = "submit" >
             </form>
             </div>
           </div>
